@@ -1,6 +1,10 @@
 <template>
   <p class="error">
-    若長時間出現此消息，請確保您已啟用Javascript！<br>否則雲監控主服務（服務端）未啟動或已關閉。
+    <br/><br/><br/>
+    请确保你启用了Javascript！
+    <br/><br/><br/>
+    或者云监控（服务端）未启动或已关闭。
+    <br/><br/><br/>
   </p>
 </template>
 <script lang="ts">

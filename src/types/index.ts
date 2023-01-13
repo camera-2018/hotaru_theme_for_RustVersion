@@ -23,6 +23,7 @@ export interface StatusItem extends BoxItem {
   hdd_total: number;
   hdd_used: number;
   custom: string;
+  alias: string;
 }
 
 declare global {
@@ -30,6 +31,7 @@ declare global {
     __PRE_CONFIG__: {
       header: string;
       subHeader: string;
+      subSubHeader: string;
       interval: number;
       footer: string;
     };

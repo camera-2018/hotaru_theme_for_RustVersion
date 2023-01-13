@@ -56,7 +56,6 @@
             getStatus ? `${expandRowByteConvert(server.hdd_used * 1024 * 1024)} / ${expandRowByteConvert(server.hdd_total * 1024 * 1024)}` : '–'
           }}
         </div>
-        <!--        <div id="expand_custom">{{server.custom}}</div>-->
       </div>
     </td>
   </tr>
@@ -107,17 +106,17 @@ div.progress {
   display: inline-block;
   overflow: hidden;
   height: 25px;
-  width: 50px;
+  width: 60px;
   border-radius: 6px;
   margin-bottom: 0 !important;
 }
 
 div.progress div.bar {
   height: 25px;
-  border-radius: 6px;
+  border-radius: 4px;
   font-size: .9rem;
   line-height: 25px;
-  color: white;
+  color: black;
 }
 
 tr td {

@@ -5,6 +5,7 @@
         {{ header }}
       </h1>
       <p>{{ subHeader }}</p>
+      <p id="subSubHeader">{{ subSubHeader }}</p>
     </div>
   </div>
 </template>
@@ -14,9 +15,9 @@ import { defineComponent } from 'vue';
 export default defineComponent({
   name: 'TheHeader',
   setup() {
-    const { header, subHeader } = window.__PRE_CONFIG__;
+    const { header, subHeader ,subSubHeader } = window.__PRE_CONFIG__;
     return {
-      header, subHeader
+      header, subHeader, subSubHeader
     };
   }
 });
@@ -42,7 +43,7 @@ export default defineComponent({
 }
 
 #header::after {
-  content: 'Pixiv: 86597206';
+  content: 'Twitter @takesinobu';
   position: absolute;
   right: 15px;
   bottom: 0;
@@ -69,5 +70,9 @@ export default defineComponent({
 #header p {
   font-size: 1.5rem;
   color: aliceblue;
+}
+
+#subSubHeader {
+  font-size: 0.5rem !important;
 }
 </style>
